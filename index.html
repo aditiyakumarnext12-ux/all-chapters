@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 9 Notes</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+        header { text-align: center; background: #4CAF50; color: white; padding: 20px; }
+        nav { margin: 20px 0; }
+        nav a { margin: 0 15px; text-decoration: none; color: #333; font-weight: bold; }
+        nav a:hover { color: #4CAF50; }
+        .subject { margin: 20px 0; }
+        .chapter { cursor: pointer; background: #e0e0e0; padding: 10px; margin: 5px 0; border-radius: 4px; }
+        .notes { display: none; padding: 10px; background: white; border-left: 5px solid #4CAF50; margin-top: 5px; }
+        footer { text-align: center; margin-top: 40px; color: #666; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Class 9 Study Notes</h1>
+        <p>All chapters covered for key subjects. Click on a chapter to view notes.</p>
+    </header>
+    
+    <nav>
+        <a href="#science">Science</a>
+        <a href="#math">Math</a>
+        <a href="#english">English</a>
+        <!-- Add more subjects as needed -->
+    </nav>
+    
+    <section id="science" class="subject">
+        <h2>Science</h2>
+        <div class="chapter" onclick="toggleNotes('sci1')">Chapter 1: Matter in Our Surroundings</div>
+        <div id="sci1" class="notes">
+            <p><strong>Key Points:</strong> Matter is anything that has mass and occupies space. States of matter: solid, liquid, gas. Evaporation, condensation, etc.</p>
+            <p>Placeholder: Add detailed notes here, including diagrams or examples.</p>
+        </div>
+        <div class="chapter" onclick="toggleNotes('sci2')">Chapter 2: Is Matter Around Us Pure?</div>
+        <div id="sci2" class="notes">
+            <p><strong>Key Points:</strong> Pure substances vs. mixtures. Elements, compounds, solutions.</p>
+            <p>Placeholder: Add detailed notes here.</p>
+        </div>
+        <!-- Add more chapters up to 15 (based on typical Class 9 syllabus) -->
+        <div class="chapter" onclick="toggleNotes('sci3')">Chapter 3: Atoms and Molecules</div>
+        <div id="sci3" class="notes">
+            <p><strong>Key Points:</strong> Atomic theory, molecules, chemical formulas.</p>
+            <p>Placeholder: Add detailed notes here.</p>
+        </div>
+        <!-- Repeat for all chapters -->
+    </section>
+    
+    <section id="math" class="subject">
+        <h2>Mathematics</h2>
+        <div class="chapter" onclick="toggleNotes('math1')">Chapter 1: Number Systems</div>
+        <div id="math1" class="notes">
+            <p><strong>Key Points:</strong> Natural numbers, integers, rational/irrational numbers.</p>
+            <p>Placeholder: Add formulas, examples, and exercises.</p>
+        </div>
+        <div class="chapter" onclick="toggleNotes('math2')">Chapter 2: Polynomials</div>
+        <div id="math2" class="notes">
+            <p><strong>Key Points:</strong> Degrees, zeros, factorization.</p>
+            <p>Placeholder: Add detailed notes here.</p>
+        </div>
+        <!-- Add more chapters -->
+    </section>
+    
+    <section id="english" class="subject">
+        <h2>English</h2>
+        <div class="chapter" onclick="toggleNotes('eng1')">Chapter 1: The Fun They Had</div>
+        <div id="eng1" class="notes">
+            <p><strong>Summary:</strong> A story about future education.</p>
+            <p>Placeholder: Add themes, characters, and questions.</p>
+        </div>
+        <!-- Add more chapters -->
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 Class 9 Notes. For educational purposes only. Source: NCERT or your textbook.</p>
+    </footer>
+    
+    <script>
+        function toggleNotes(id) {
+            const notes = document.getElementById(id);
+            notes.style.display = notes.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
